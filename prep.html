@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="index.html"> <input id="info" input type="checkbox" name="info" onclick="">Personal Information</a>
+                </li>
+                <li>
+                    <a href="questions.html"><input id="questions" input type="checkbox" name="questions" onclick="">Questionnaire</a>
+                </li>
+                <li>
+                    <a href="dates.html"><input id="dates" input type="checkbox" name="dates" onclick="">Dates</a>
+                </li>
+                <li>
+                    <a href="guests.html"><input id="guests" input type="checkbox" name="guests" onclick="">Guests</a>
+                </li>
+                <li>
+                    <a href="prep.html"><input id="prep" input type="checkbox" name="prep" onclick="">Preplist</a>
+                </li>
+                <li>
+                    <a href="reserve.html"><input id="rev" input type="checkbox" name="rev" onclick="">My Reservation</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div class="grid">
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="form-style-3">
+                    <div id="heading">
+                        <b><h1>Preplist</h1></b>
+                        <li>Please read and acknowledge each of the items below to proceed.</li>
+                
+                        <li><h3>Preplist items</h3></li>
+                        <li>Please review the following items:</li>
+                    </div>
+                 <br>
+                     <a href="#menu-toggle" id="menu-toggle" ><button style="float: right">Check Progress</button></a> <br><br><br>
+                    
+                       <!-- Refund Policy -->
+                    <form class="pure-form" action="" method="post">
+                        <fieldset><legend><b><h7>Refund Policy:</h7></b></legend>
+                            <div class="row">
+                                <div class="col10">
+                                    <li>All orientation fees. including guest fees and orientation housing fees, are NON-REFUNDABLE. Pleas review your orientation reservation page carefully before submitting payment.
+                                    </li>
+                                    <br>
+                                    <li><input type="checkbox" name="refund"> I have read and understand the above statemant.
+                                    </li>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                <br>
+                 
+                    <!-- Immunization Requirement -->
+               <form class="pure-form" action="" method="post">
+                    <fieldset><legend><b><h7>Immunization Requirement:</h7></b></legend>
+                        <div class="row">
+                            <div class="col10">
+                                <li>All student must submit a signed immunization form before registering for classes. Student have an Immunization hold (IM) on their account until the form has be submitted. Submit your Immunization records before attending orientation 
+                                </li>
+                                <br>
+                                <li><input type="checkbox" name="immunization requirement"> I have read and understand the above statement.
+                                </li>
+                            </div>
+                        </div>
+                   </fieldset>
+                </form>
+               <br>
+                    <!-- OARS -->
+                <form class="pure-form" action="" method="post">
+                    <fieldset><legend><b><h7>OARS:</h7></b></legend>
+                        <div class="row">
+                            <div class="col10">
+                                <li>Incoming first-year student will be advised via Online Advising and Resource  System (OARS) designed by University Advising Services. All freshman students must complete OARS before registering for classes and attending orientation. For more information, visit www.fau.edu/uas for detailed instructions and instructional videos or contact University Advising Services through email at advisingservices@fau.edu or 561-297-3064.
+                                </li>
+                                
+                                <br>
+                                <li><input type="checkbox" name="OARS"> I have read and understand the above statement.
+                                </li>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                </div>
+            </div>
+            <br>
+            <form>
+               <div class="Submit center" align="middle">
+                <input href="#exit" type="submit" value="Exit" />
+                <input href="#save"type="submit" value="Save Progress" />
+                <input href="#sumbitform" type="submit" value="Save and Continue" />
+                   </div>
+            </form>
+        </div>
+        <!-- /#page-content-wrapper -->
+            </div>
+        <!--- /#grid --->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

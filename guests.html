@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="index.html"> <input id="info" input type="checkbox" name="info" onclick="">Personal Information</a>
+                </li>
+                <li>
+                    <a href="questions.html"><input id="questions" input type="checkbox" name="questions" onclick="">Questionnaire</a>
+                </li>
+                <li>
+                    <a href="dates.html"><input id="dates" input type="checkbox" name="dates" onclick="">Dates</a>
+                </li>
+                <li>
+                    <a href="guests.html"><input id="guests" input type="checkbox" name="guests" onclick="">Guests</a>
+                </li>
+                <li>
+                    <a href="prep.html"><input id="prep" input type="checkbox" name="prep" onclick="">Preplist</a>
+                </li>
+                <li>
+                    <a href="reserve.html"><input id="rev" input type="checkbox" name="rev" onclick="">My Reservation</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div class="grid">
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="form-style-3">
+                 <div id="heading">
+                     <b><h1>Guests</h1></b>
+                        <li>If you plan on having any guests attending orientation, then please add them below!<br>Please note that guests cannot stay overnight in the reidence hall and must make accommodations off campus.</li>
+                    </div>
+                    <br>
+                    <a href="#menu-toggle" id="menu-toggle" ><button style="float: right">Check Progress</button></a> <br><br><br>
+                    
+                    <form class="pure-form" action="" method="post">
+                         <fieldset><legend><b><h7>My Guest(s)</h7>:</b></legend>
+                             <div class="row">
+                                 <div class="col5">
+                                     <label class="control-label" for="guest">Would You like to make a reservation for a guest?</label>
+                                 </div>
+                                 <div class="col5">
+                                     <form id="input-append">
+                                         <div class="field">
+                                        <button id="guest" type="button" onclick="addGuest();">+</button>
+                                         </div>
+                                     </form>
+                                 </div>
+                                <br>
+                             </div>
+                             <small>Press + to add guest form field</small>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <form>
+               <div class="Submit center" align="middle">
+                <input href="#exit" type="submit" value="Exit" />
+                <input href="#save"type="submit" value="Save Progress" />
+                <input href="#sumbitform" type="submit" value="Save and Continue" />
+                   </div>
+            </form>
+        </div>
+        <!-- /#page-content-wrapper -->
+        </div>
+        <!--- /#grid -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/guest.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    
+    <script>/*
+        function addGuest(){
+            e.preventDefault();
+            var guest += 1;
+            document.getElementById("input-append").innerHTML = guest;
+        };
+        /*
+       function addGuest(){
+        var guest = 1;
+    $("#add-more").click(function(e){
+        //e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = '<input autocomplete="off" class="input form-control" id="field' + next + '" name="field' + next + '" type="text">';
+        var newInput = $(newIn);
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+    
+
+    
+};*/
+
+    </script>
+
+</body>
+
+</html>
